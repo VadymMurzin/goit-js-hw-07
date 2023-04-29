@@ -26,6 +26,7 @@ function createGalleryMarkUp(galleryItems) {
 }
 
 function onGalleryContainerClick(evt) {
+  evt.preventDefault();
   const isGalleryImage = evt.target.classList.contains("gallery__image");
   if (!isGalleryImage) {
     return;
